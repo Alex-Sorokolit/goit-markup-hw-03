@@ -28,8 +28,14 @@ font-weight: 500; link h3
 font-weight: 700; button h2 h3
 font-weight: 900; h1 */
 /* ----------------------------------------------------------------------------------------------------------------------- */
-
+.container {
+  width: 1200px;
+  outline: solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
+  margin: 0px;
   background-color: var(--background-white);
   color: var(--text-gray);
   font-family: var(--font-main);
@@ -61,6 +67,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* Page Index */
 /* header */
