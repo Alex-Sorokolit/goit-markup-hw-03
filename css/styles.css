@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* Variables */
 :root {
   /* Color Palet */
@@ -87,6 +92,10 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+.menu {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: var(--font-decor);
   font-size: 26px;
@@ -102,17 +111,42 @@ body {
   color: var(--accent);
 }
 
+.nav {
+  /* display: flex;
+  justify-content: space-evenly; */
+}
 .nav-list {
+  display: flex;
   color: var(--text-dark-gray);
 }
 /* .nav-item {
 } */
+
+/* Відступи пунктів навігації_________________________ */
+.nav-list .nav-item + .nav-item {
+  margin-left: 50px;
+}
+/* або так: */
+/* .nav-list .nav-item:not(:last-child) {
+  margin-right: 50px;
+} */
+/* ___________________________________________ */
+
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .nav-item:hover,
 .nav-item:focus {
   color: var(--accent);
 }
-/* .auth-list {
-} */
+.auth-list {
+  display: flex;
+}
+.auth-list .auth-item + .auth-item {
+  margin-left: 50px;
+}
 /* .auth-item {
 } */
 .auth-item:hover,
@@ -128,6 +162,7 @@ body {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
