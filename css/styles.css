@@ -87,6 +87,7 @@ body {
 
 /* .nav {
 } */
+
 .header {
   font-weight: 500;
   line-height: 1.1;
@@ -101,6 +102,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   color: var(--accent);
 }
 .logo-black {
@@ -112,9 +114,9 @@ body {
 }
 
 .nav {
-  /* display: flex;
-  justify-content: space-evenly; */
+  margin-left: 93px;
 }
+
 .nav-list {
   display: flex;
   color: var(--text-dark-gray);
@@ -143,6 +145,7 @@ body {
 }
 .auth-list {
   display: flex;
+  margin-left: auto;
 }
 .auth-list .auth-item + .auth-item {
   margin-left: 50px;
@@ -205,8 +208,16 @@ body {
   line-height: 1.1;
   text-transform: uppercase;
 }
-/* .specifics-list {
-} */
+.specifics-list {
+  display: flex;
+}
+
+.specifics-item {
+  width: 270px;
+}
+.specifics-list .specifics-item:not(:last-child) {
+  margin-right: 30px;
+}
 .specifics-list p {
   margin-top: 0px;
   margin-bottom: 0px;
