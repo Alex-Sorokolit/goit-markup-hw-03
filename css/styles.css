@@ -38,7 +38,7 @@ font-weight: 900; h1 */
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid tomato;
+  /* outline: solid tomato; */
 }
 body {
   margin: 0px;
@@ -226,16 +226,23 @@ body {
 
 /* .preview {
 } */
-.preview-title,
-.team-title {
+.section-title {
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.03em;
 }
-/* .preview-list {
-} */
+.preview-list {
+  display: flex;
+}
+.preview-list > .item {
+  height: 294px;
+}
+.preview-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* team */
 .team {
@@ -243,20 +250,36 @@ body {
 }
 /* .team-title {
 } */
-/* .team-list {
-} */
+.team-list {
+  display: flex;
+}
+.team-list > .item {
+  display: block;
+  background-color: var(--background-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; */
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list .photo {
+  margin-bottom: 20px;
+}
 .team-worker,
 .team-description {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
 }
-.team-worker {
+/* .team-worker {
   margin-bottom: 10px;
-}
+} */
 .team-description {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
 
 /* footer */
@@ -264,6 +287,10 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-dark-gray);
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 23px;
 }
 .logo-white {
   color: var(--text-white);
@@ -287,6 +314,13 @@ body {
 .address-link:focus {
   color: var(--accent);
 }
+.address-list > .item {
+  display: block;
+  margin-bottom: 5px;
+}
+.address-link > .item:not(:last-child) {
+}
+
 /* -------------------------------------------------------------------------------------------------------------------- */
 /* Page Portfolio */
 /* .portfolio {
